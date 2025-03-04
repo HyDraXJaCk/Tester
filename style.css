@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+.section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+}
+
+.section h1, h2 {
+    font-size: 3rem;
+}
+
+.section p {
+    font-size: 1.2rem;
+    max-width: 600px;
+}
+
+.gallery img {
+    width: 200px;
+    margin: 10px;
+    transition: transform 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+.show {
+    opacity: 1;
+}
